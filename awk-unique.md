@@ -3,7 +3,7 @@
 
 Example:
 
-awk 'BEGIN {OFS=","} {print $0,NR-1FILENAME}' dm_transaction.txt > dm_transaction_unique.txt
+    awk 'BEGIN {OFS=","} {print $0,NR-1FILENAME}' dm_transaction.txt > dm_transaction_unique.txt
 
 * {OFS=","} = "delimiter"
 * dm_transaction.txt = "data file before changing"
