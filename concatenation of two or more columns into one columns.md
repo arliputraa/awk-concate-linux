@@ -1,3 +1,5 @@
+# concatenation of two or more columns into one columns in linux
+
 * Open file path data you want to concate
 * Create header and insert data name columns. example: header_transaction.txt
 
