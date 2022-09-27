@@ -6,7 +6,9 @@
 <img width="483" alt="image" src="https://user-images.githubusercontent.com/110078907/184283579-13dc6422-ce43-452f-921b-12f48d23cfdc.png">
 
 
-view file contents: $ head header_transaction.txt
+view file contents:
+
+    head header_transaction.txt
 
 <img width="491" alt="image" src="https://user-images.githubusercontent.com/110078907/184283839-206e3aa0-64da-4ab4-b8f0-f71c020ba3e8.png">
 
@@ -19,11 +21,11 @@ delimiter ',' don't insert 'IGNORE'
 
 
 * example table concate:
-tblid, tbltcd, time_pr
+tblid=$4, tbltcd=$5, time_pr=$49
 
 command :
 
-* $ awk -F',' -vOFS=',' '{ $(NF+1)=$4$5$49 ;print}' /home/neo4j/neo4j-enterprise-4.4.9/import/data/202104/dm_transaction/awkconcate/data_transaction.txt > /home/neo4j/neo4j-enterprise-4.4.9/import/data/202104/dm_transaction/awkconcate/data_transaction_concate.txt
+      awk -F',' -vOFS=',' '{ $(NF+1)=$4$5$49 ;print}' /home/neo4j/neo4j-enterprise-4.4.9/import/data/202104/dm_transaction/awkconcate/data_transaction.txt > /home/neo4j/neo4j-enterprise-4.4.9/import/data/202104/dm_transaction/awkconcate/data_transaction_concate.txt
 
 
 <img width="486" alt="image" src="https://user-images.githubusercontent.com/110078907/184285476-91867349-d914-4c8e-8a83-48ab5f49d931.png">
